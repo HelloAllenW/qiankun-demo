@@ -12,7 +12,7 @@ const routes = [
     component: () => import('@/views/HomeView.vue')
   },
   {
-    // 适配微应用的Histroy路由
+    // 当微应用为Hitory时，需要多添加一项路由配置以适配微应用的路由
     hidden: true,
     name: 'microAppVue2',
     path: '/micro-app-vue2/*',
